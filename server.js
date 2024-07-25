@@ -32,8 +32,8 @@ app.post('/upload', upload.single('product'), (req, res) => {
 });
 
 // Import routes
-const productRoutes = require('../routes/productRoutes');
-const userRoutes = require('../routes/userRoutes');
+const productRoutes = require('./Shopping_server/routes/productRoutes');
+const userRoutes = require('./Shopping_server/routes/userRoutes');
 
 // Use routes
 app.use(productRoutes);
