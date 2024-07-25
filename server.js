@@ -13,7 +13,7 @@ mongoose.connect('mongodb+srv://aoffy:zaq123@cluster0.c5nzbue.mongodb.net/?retry
 
 
 
-// app.use("/images", express.static('./upload/images'));
+app.use("/images", express.static('./upload/images'));
 
 // Import routes
 const productRoutes = require('./routes/productRoutes');
@@ -23,7 +23,7 @@ const imageRoutes = require('./routes/imageRoutes');
 // Use routes
 app.use(productRoutes);
 app.use(userRoutes);
-// app.use(imageRoutes);
+app.use(imageRoutes);
 
 app.get('/', (req, res) => {
     res.send("Express is running on port " + port);
