@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cors());
 
 // Database connection
-mongoose.connect('mongodb+srv://aoffy:zaq123@cluster0.c5nzbue.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
+mongoose.connect('mongodb+srv://aoffyclub:11111@cluster0.i00tdkm.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0');
 
 
 
