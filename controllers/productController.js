@@ -11,6 +11,7 @@ exports.addProduct = async (req, res) => {
         category: req.body.category,
         new_price: req.body.new_price,
         old_price: req.body.old_price,
+        des: req.body.des,
         date: req.body.date,
         available: req.body.available,
     });

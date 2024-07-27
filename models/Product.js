@@ -9,6 +9,7 @@ const productSchema = new mongoose.Schema({
     old_price: { type: Number, required: true },
     date: { type: Date, default: Date.now },
     available: { type: Boolean, default: true },
+    des: { type: String, default: true}
 });
 
 const Product = mongoose.model('Product', productSchema);
